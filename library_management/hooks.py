@@ -6,6 +6,7 @@ app_publisher = "Rafael Ruben"
 app_description = "Library Management System"
 app_email = "rrjorgegz@gmail.com"
 app_license = "MIT"
+app_version = app_version
 
 # Includes in <head>
 # ------------------
@@ -65,7 +66,7 @@ app_license = "MIT"
 # ------------
 
 # before_install = "library_management.install.before_install"
-# after_install = "library_management.install.after_install"
+after_install = "library_management.script.after_install"
 
 # Uninstallation
 # ------------
@@ -102,11 +103,7 @@ app_license = "MIT"
 # Document Events
 # ---------------
 # Hook on document methods and events
-doc_events = {
-	"Estudiante": {
-		"after_insert": "library_management.library_management.doctype.estudiante.estudiante.alet_insert_estiduante"
-	}
-}
+doc_events = {"Estudiante": {"after_insert": "library_management.library_management.doctype.estudiante.estudiante.alet_insert_estiduante"}}
 # doc_events = {
 # 	"*": {
 # 		"on_update": "method",
