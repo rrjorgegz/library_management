@@ -1,0 +1,12 @@
+.DS_Store
+*.pyc
+*.egg-info
+*.swp
+tags
+node_modules
+library_management/__pycache__
+library_management/library_management/__pycache__
+library_management/library_management/doctype/__pycache__
+library_management/library_management/doctype/asignatura/__pycache__
+library_management/library_management/doctype/estudiante/__pycache__
+library_management/library_management/doctype/persona_juridica/__pycache__

@@ -1,0 +1,79 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2022-12-29 20:42:07.651701",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "nombre",
+  "categoria",
+  "lft",
+  "rgt",
+  "is_group",
+  "old_parent",
+  "parent_asignatura"
+ ],
+ "fields": [
+  {
+   "fieldname": "nombre",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Nombre",
+   "reqd": 1
+  },
+  {
+   "fieldname": "categoria",
+   "fieldtype": "Data",
+   "label": "Categoria"
+  },
+  {
+   "fieldname": "lft",
+   "fieldtype": "Int",
+   "hidden": 1,
+   "label": "Left",
+   "no_copy": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "rgt",
+   "fieldtype": "Int",
+   "hidden": 1,
+   "label": "Right",
+   "no_copy": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "is_group",
+   "fieldtype": "Check",
+   "label": "Is Group"
+  },
+  {
+   "fieldname": "old_parent",
+   "fieldtype": "Link",
+   "label": "Old Parent",
+   "options": "Asignatura"
+  },
+  {
+   "fieldname": "parent_asignatura",
+   "fieldtype": "Link",
+   "label": "Parent Asignatura",
+   "options": "Asignatura"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_tree": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2022-12-29 20:42:07.651701",
+ "modified_by": "Administrator",
+ "module": "Library Management",
+ "name": "Asignatura",
+ "nsm_parent_field": "parent_asignatura",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}
